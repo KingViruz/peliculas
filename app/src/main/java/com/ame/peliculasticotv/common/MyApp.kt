@@ -1,6 +1,8 @@
 package com.ame.peliculasticotv.common
 
 import android.app.Application
+import android.content.Context
+import android.widget.Toast
 
 class MyApp: Application() {
 
@@ -11,6 +13,11 @@ class MyApp: Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
+
+        Helpers.toastShort("pollo", instance)
+
+
+
     }
 
 }
